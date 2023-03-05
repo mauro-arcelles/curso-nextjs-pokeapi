@@ -24,7 +24,7 @@ export const CustomNavbar = () => {
 
       <Spacer css={{ flex: 1 }} />
 
-      <Link href="#" style={{ color: 'white' }}>
+      <Link href="/favorites" style={{ color: 'white' }}>
         Favoritos
       </Link>
 

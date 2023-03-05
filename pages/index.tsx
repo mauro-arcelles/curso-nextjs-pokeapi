@@ -2,7 +2,7 @@ import { pokeApi } from "@/api";
 import { Layout } from "@/components/layout";
 import { PokemonCard } from "@/components/pokemon";
 import { PokemonListResponse, SmallPokemon } from '@/interfaces';
-import { Grid } from "@nextui-org/react";
+import { Grid, Image } from "@nextui-org/react";
 import { GetStaticProps } from 'next';
 
 interface Props {
@@ -14,6 +14,7 @@ export default function Home({ pokemons }: Props) {
   return (
     <>
       <Layout title="Listado de Pokemons">
+
         <Grid.Container gap={2} justify="flex-start">
           {
             pokemons.map(pokemon => (
